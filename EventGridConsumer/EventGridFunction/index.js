@@ -19,7 +19,7 @@
 module.exports = function (context, req) {
     const SubscriptionValidationEvent = "Microsoft.EventGrid.SubscriptionValidationEvent";
     const StorageBlobCreatedEvent = "Microsoft.Storage.BlobCreated";
-    const CustomTopicEvent = "Contoso.Items.ItemReceived";
+    const CustomTopicEvent = "Contoso.Items.ItemReceivedEvent";
 
     var parsedReq = JSON.parse(req['rawBody']);
     context.log('JavaScript HTTP trigger function processed a request.' + parsedReq);
