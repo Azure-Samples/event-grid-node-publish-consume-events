@@ -27,10 +27,11 @@ var url = require('url');
 function EventGridSample() {
   // TODO: Enter value for topicKey
   let topicKey = 'enter-topic-key';
-  let topicCreds = new msRestAzure.TopicCredentials(topicKey);
-  let egClient = new eventGrid(topicCreds);
   // TODO: Enter value for topic-endpoint
   let topicEndPoint = 'enter-topic-endpoint';
+
+  let topicCreds = new msRestAzure.TopicCredentials(topicKey);
+  let egClient = new eventGrid(topicCreds);
   let topicUrl = url.parse(topicEndPoint, true);
   let topicHostName = topicUrl.host;
   let currentDate = new Date();
@@ -42,7 +43,7 @@ function EventGridSample() {
       dataVersion: '2.0',
       eventType: 'Contoso.Items.ItemReceivedEvent',
       data: {
-        itemUri: 'ContosoSuperItemUri'
+        itemSku : 'ContosoItemSku'
       },
       eventTime: currentDate
     }
