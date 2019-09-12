@@ -1,7 +1,11 @@
 ---
-services: event-grid
-platforms: node.js
-author: kirthik
+page_type: sample
+languages:
+- javascript
+products:
+- azure
+description: "This contains Node.js samples for publishing events to Azure Event Grid and consuming events from Azure Event Grid."
+urlFragment: event-grid-node-publish-consume-events
 ---
 
 # Microsoft Azure Event Grid Publish/Consume Samples for Node.js
