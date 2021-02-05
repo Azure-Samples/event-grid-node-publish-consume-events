@@ -49,15 +49,15 @@ The above two samples use the Event Grid data plane SDK (azure-eventgrid).
       ```
  3. Create an Event Grid topic: You will need to first create an Event Grid topic. The steps are described at https://docs.microsoft.com/en-us/azure/event-grid/scripts/event-grid-cli-create-custom-topic. Make a note of the topic name and resource group name. 
 
- 4. Publish an Azure function: In this step, we will be using the EventGridConsumer sample and publishing it as an Azure function. Here are the steps:
+ 4. Publish an Azure Function: In this step, we will be using the EventGridConsumer sample and publishing it as an Azure Function. Here are the steps:
 
     a. Follow the instructions here to publish an Azure Function - https://code.visualstudio.com/tutorials/functions-extension/getting-started
 
-    b. Once you have published Azure function, navigate to the newly published Function in Azure Portal.
+    b. Once you have published Azure Function, navigate to the newly published Function in Azure Portal.
 
     c. Click on "Get Function URL" and copy the function URL.
 
-    d. Create an event subscription to the topic you created in step 1, and provide this Azure function as the endpoint for your event subscription. https://docs.microsoft.com/en-us/azure/event-grid/scripts/event-grid-cli-subscribe-custom-topic describes how to create an event subscription.
+    d. Create an event subscription to the topic you created in step 1, and provide this Azure Function as the endpoint for your event subscription. https://docs.microsoft.com/en-us/azure/event-grid/scripts/event-grid-cli-subscribe-custom-topic describes how to create an event subscription.
 
     e. Navigate to the Function (you created in step 2) in Azure Portal.
 
