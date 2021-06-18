@@ -14,7 +14,7 @@ This contains Node.js samples for publishing events to Azure Event Grid and cons
 
 ## Features
 
-These samples demonstrates the following features:
+These samples demonstrate the following features:
 
 Data Plane:
 
@@ -44,8 +44,7 @@ The above two samples use the Event Grid data plane SDK (azure-eventgrid).
  2. Install the dependencies
      ```
       cd event-grid-node-publish-consume-events
-      npm install
-	  
+      npm install	  
       ```
  3. Create an Event Grid topic: You will need to first create an Event Grid topic. The steps are described at https://docs.microsoft.com/en-us/azure/event-grid/scripts/event-grid-cli-create-custom-topic. Make a note of the topic name and resource group name. 
 
@@ -65,7 +64,7 @@ The above two samples use the Event Grid data plane SDK (azure-eventgrid).
 
  3. Start publishing events: In this step, we will be using the EventGridPublisher sample to start publishing events to the EventGrid topic you created in step1. Here are the steps:
  
-    a. In index.js, replace the topic-endpoint and topic-key fields with the topic end point and the key of the topic respectively.
+    a. In index.js, replace the topic-endpoint and topic-key fields with the topic endpoint and the key of the topic respectively.
 
     b. Run the application in Visual studio code to publish events to this topic.
     
