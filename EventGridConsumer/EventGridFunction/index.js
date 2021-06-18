@@ -30,7 +30,7 @@ module.exports = function (context, req) {
         if (eventGridEvent.eventType == SubscriptionValidationEvent) {
             context.log('Got SubscriptionValidation event data, validationCode: ' + eventData.validationCode + ', topic: ' + eventGridEvent.topic); 
             context.res = {
-                    validationResponse: eventData.validationCode
+                body: { "validationResponse": eventData.validationCode }
             };
         } else if (eventGridEvent.eventType == StorageBlobCreatedEvent) {
             context.log('Got Blobcreated event data, blob URI ' + eventData.url);
